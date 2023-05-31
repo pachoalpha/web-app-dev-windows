@@ -2,12 +2,12 @@ import functools
 from flask import Blueprint, request, jsonify
 from flask_cors import CORS
 from model.company import (
-    get_companies,
-    get_company,
-    create_company,
-    get_company_by_name,
-    update_company,
-    delete_company,
+    get_inventarios,
+    get_inventario,
+    create_inventario,
+    get_inventario_by_name,
+    update_inventario,
+    delete_inventario,
 )
 
 bp = Blueprint('companies', __name__, url_prefix='/companies')
@@ -22,7 +22,6 @@ def list():
 def get(company_id):
     return jsonify(get_company(company_id))
 
-# 
 @bp.route('/by_name/<company_name>', methods=['GET'])
 def get_by_name(company_name):
     return jsonify(get_company_by_name(company_name))

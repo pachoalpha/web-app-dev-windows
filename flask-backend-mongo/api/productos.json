@@ -1,0 +1,20 @@
+[
+    {
+      "nombre": "Proteína en polvo",
+      "precio": 29.99,
+      "descripcion": "Suplemento de proteína en polvo para ayudar en la recuperación muscular."
+    },
+    {
+      "nombre": "Barra energética",
+      "precio": 2.99,
+      "descripcion": "Barra energética nutritiva para antes o después del entrenamiento."
+    },
+    {
+      "nombre": "Suplemento de omega-3",
+      "precio": 15.99,
+      "descripcion": "Suplemento de aceite de pescado rico en omega-3 para mejorar la salud cardiovascular."
+    }
+  ]
+  
+
+  

@@ -8,7 +8,7 @@ services:
         working_dir: /opt/api/
         command: bash run.sh
         ports:
-            - 5000:5000
+            - 5001:5000
         volumes:
             - ./api/:/opt/api/
         stdin_open: true
@@ -29,14 +29,14 @@ services:
             - ./.env
         #volumes:
         #    - ./data/mongo:/data/db
-    node:
-        image: node:latest
-        volumes:
-            - ./frontend:/opt/frontend
-        working_dir: /opt/frontend
-    nginx:
-        image: nginx:latest
-        volumes:
-            - ./frontend/build:/usr/share/nginx/html
-        ports:
-            - 8080:80
+    # node:
+    #     image: node:latest
+    #     volumes:
+    #         - ./frontend:/opt/frontend
+    #     working_dir: /opt/frontend
+    # nginx:
+    #     image: nginx:latest
+    #     volumes:
+    #         - ./frontend/build:/usr/share/nginx/html
+    #     ports:
+    #         - 8080:80
